@@ -1,0 +1,16 @@
+<html>
+<body>
+<center><br>
+<input type="text" id="inputTxtBx" onchange="saveText()" placeholder="Enter string text(s)" />
+<script>
+var inputText = document.getElementById("inputTxtBx");
+var SText = [];
+
+function saveText() {
+SText.push(inputText.value.split(" "));
+inputText.value = "";
+alert(" " +  SText.sort().join(", "));
+}
+</script>
+</body>
+</html>
